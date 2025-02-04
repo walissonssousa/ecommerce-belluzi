@@ -200,6 +200,24 @@ Armazena as informações de peso e dimensões de um produto.
 
 ---
 
+## 10. Tabela: `unit_types` (Tipos de Unidade)
+
+Armazena os tipos de unidade (por exemplo, kg, unidade, litro, etc.) usados para medir produtos ou quantidades.
+
+| Coluna        | Descrição                                               | Tipo de Dados    |
+|---------------|---------------------------------------------------------|------------------|
+| `id`          | Identificador único do tipo de unidade                  | `integer`        |
+| `name`        | Nome do tipo de unidade (ex: kg, unidade, litro)        | `string(255)`    |
+| `created_at`  | Data de criação do tipo de unidade                      | `timestamp`      |
+| `updated_at`  | Data de atualização do tipo de unidade                  | `timestamp`      |
+
+### Observações:
+- **Nome** (`name`) é único para garantir que não haja tipos de unidade duplicados.
+
+### Relacionamentos:
+- Não há relacionamentos diretos com outras tabelas, pois a tabela `unit_types` é apenas para armazenar tipos de unidades de forma independente.
+
+
 ## Considerações Finais
 
 Essa estrutura de banco de dados foi projetada para atender a um sistema de e-commerce completo, com gerenciamento de produtos, categorias, marcas, fornecedores, variações de produtos e controle de estoque.

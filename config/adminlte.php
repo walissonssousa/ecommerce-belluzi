@@ -332,12 +332,17 @@ return [
                 [
                     'text' => 'categories',
                     'icon' => 'fas fa-fw fa-list',
-                    'url' => '#',
+                    'url' => '/categories',
                 ],
                 [
                     'text' => 'brands',
                     'icon' => 'fas fa-fw fa-tag',
-                    'url' => '#',
+                    'url' => '/brands',
+                ],
+                [
+                    'text' => 'units_type',
+                    'icon' => 'fas fa-fw fa-cubes',
+                    'url' => '/unit-types',
                 ],
                 [
                     'text' => 'variations',
@@ -379,7 +384,7 @@ return [
                 [
                     'text' => 'all_suppliers',
                     'icon' => 'fas fa-fw fa-list',
-                    'url' => '#',
+                    'url' => '/suppliers',
                 ],
                 [
                     'text' => 'add_supplier',

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use App\Models\Category;
+use App\Models\UnitType;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductVariation;
@@ -104,8 +105,15 @@ class ProductController extends Controller
         $brands = Brand::all();
         $suppliers = Supplier::all();
         $productVariations = ProductVariation::all();
+        $unitType = UnitType::all();
 
-        return view('products.create', compact('categories', 'brands', 'suppliers'));
+        return view('products.create', compact(
+          'categories', 
+         'brands', 
+                    'suppliers',
+                    'productVariations',
+                    'unitType'
+        ));
     }
 
     /**

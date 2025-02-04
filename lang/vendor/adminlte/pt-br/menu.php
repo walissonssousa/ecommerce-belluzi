@@ -10,6 +10,7 @@ return [
     'all_products' => 'Todos os Produtos',
     'categories' => 'Categorias',
     'brands' => 'Marcas',
+    'units_type' => 'Tipo de Unidade',
     'variations' => 'Variações',
     'orders' => 'Pedidos',
     'transactions' => 'Transações',

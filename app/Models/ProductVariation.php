@@ -9,7 +9,7 @@ class ProductVariation extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['product_id', 'variation_type', 'variation_value', 'price', 'weight', 'dimensions', 'stock'];
+    protected $fillable = ['product_id', 'variation_type', 'variation_value', 'price', 'weight', 'dimensions', 'stock', 'sku', 'barcode', 'product_dimension_id'];
 
     // Uma variação pertence a um produto
     public function product()
